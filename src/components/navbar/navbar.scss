@@ -1,0 +1,21 @@
+@import '../../assets/styles/variables';
+
+.navbar {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 44px 0;
+
+  a {
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      color: $cyan;
+    }
+  }
+}

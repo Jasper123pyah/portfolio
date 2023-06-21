@@ -1,0 +1,119 @@
+@import './assets/styles/variables';
+
+@font-face {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/Abel-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 500;
+    src: url('assets/fonts/AlegreyaSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $white;
+    background-color: $dark;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    letter-spacing: 5px;
+}
+
+
+html, .root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 5px;
+}
+
+h1, .h1 {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 102px;
+    line-height: 114px;
+    margin-top: 38px;
+    margin-bottom: 76px;
+    letter-spacing: 20px;
+}
+
+h2, .h2 {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 63px;
+    line-height: 76px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    letter-spacing: 13px;
+}
+
+h3, .h3 {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 39px;
+    line-height: 76px;
+    margin-top: 38px;
+    margin-bottom: 0;
+    letter-spacing: 8px;
+}
+
+h4, .h4 {
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 38px;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+}
+a {
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+}
+
+p, ul, ol, pre, table, blockquote {
+    margin-top: 0;
+    margin-bottom: 38px;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+hr, .hr {
+    border: 1px solid;
+    margin: -1px 0;
+}
+
+a, b, i, strong, em, small, code {
+    line-height: 0;
+}
+
+sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}

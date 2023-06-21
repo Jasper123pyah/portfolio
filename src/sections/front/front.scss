@@ -1,0 +1,33 @@
+@import '../../assets/styles/variables.scss';
+
+.front {
+  margin-top: 88px;
+  display: flex;
+  width: 100%;
+  &-text {
+    width: 60%;
+  }
+  &-image {
+    img {
+      border-radius: 44px;
+      aspect-ratio: 6/7;
+      width: 540px;
+      height: 620px;
+      object-fit: cover;
+    }
+  }
+  h3 {
+    margin: unset;
+  }
+  .name {
+    font-family: 'Montserrat', sans-serif;
+    margin: 24px 0;
+    color: $pink;
+  }
+  .description {
+    margin: unset;
+  }
+  .findme {
+    margin-top: 20px;
+  }
+}
