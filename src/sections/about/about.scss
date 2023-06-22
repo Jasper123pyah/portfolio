@@ -1,5 +1,45 @@
 @import '../../assets/styles/variables.scss';
 
 .about {
+  padding-bottom: 80px;
 
+
+  &-heading {
+    display: flex;
+    justify-content: center;
+  }
+  &-section {
+    margin-top: 38px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 117px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-who {
+    &__title {
+      color: $pink;
+      margin-bottom: 20px;
+      margin-top: unset;
+    }
+  }
+
+  &-card {
+    &__icon {
+      font-size: 64px;
+      color: $cyan;
+    }
+
+    &__description {
+      font-size: 22px;
+      height: 140px;
+    }
+
+    &__head {
+      color: $white;
+      font-size: 28px;
+      margin-top: unset;
+    }
+  }
 }
