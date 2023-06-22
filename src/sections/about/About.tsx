@@ -14,7 +14,6 @@ const About = () => {
       <h3>
         Who I am
       </h3>
-
       <div className={'about-section'}>
         <div className={'about-description'}>
           <h4 className={'about-who__title'}>
@@ -44,7 +43,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
       <h3>
         What I do
       </h3>

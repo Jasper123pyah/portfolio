@@ -27,7 +27,7 @@ const Front = () => {
           <a target={'_blank'} href={'https://github.com/Jasper123pyah'} className={'findme-button'}>
             <FiGithub/>
           </a>
-          <a target={'_blank'} href={'linkedin.com/in/jaspervandenmeiracker'} className={'findme-button'}>
+          <a target={'_blank'} href={'https://linkedin.com/in/jaspervandenmeiracker'} className={'findme-button'}>
             <FaLinkedinIn/>
           </a>
           <a target={'_blank'} href={'https://deltafhict.nl'} className={'findme-button'}>

@@ -1,0 +1,9 @@
+@import '../../assets/styles/variables.scss';
+
+.projects {
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
+  }
+}
