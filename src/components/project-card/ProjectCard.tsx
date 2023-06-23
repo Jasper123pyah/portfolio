@@ -8,8 +8,8 @@ type ProjectCardProps = {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="project-card">
-      <img src={project.images[0]} alt={project.name}/>
-      <div className="project-details">
+      <img className={'project-card__image'} src={`src/assets/images/${project.images[0]}`} alt={project.name}/>
+      <div className="project-card__details">
         <h4>{project.name}</h4>
         <p>{project.role}</p>
       </div>
