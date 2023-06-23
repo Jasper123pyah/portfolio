@@ -10,8 +10,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <div className="project-card">
       <img className={'project-card__image'} src={`src/assets/images/${project.images[0]}`} alt={project.name}/>
       <div className="project-card__details">
-        <h4>{project.name}</h4>
-        <p>{project.role}</p>
+        <div className={'project-card__details-container'}>
+          <h4>{project.name}</h4>
+          <p>{project.role}</p>
+        </div>
       </div>
     </div>
   );
