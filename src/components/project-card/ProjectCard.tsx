@@ -1,14 +1,6 @@
 import React from 'react';
 import './project-card.scss';
-
-type Project = {
-  name: string;
-  role: string;
-  description: string;
-  image: string;
-  link: string;
-}
-
+import { Project } from '../../projects.ts';
 type ProjectCardProps = {
   project: Project;
 }
@@ -16,7 +8,7 @@ type ProjectCardProps = {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="project-card">
-      <img src={project.image} alt={project.name}/>
+      <img src={project.images[0]} alt={project.name}/>
       <div className="project-details">
         <h4>{project.name}</h4>
         <p>{project.role}</p>
