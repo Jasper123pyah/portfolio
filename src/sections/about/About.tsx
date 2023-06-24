@@ -7,7 +7,7 @@ import {FaCat} from "react-icons/fa";
 const About = () => {
 
   return (
-    <div className={'about'}>
+    <div id={'about'} className={'about'}>
       <div className="about-heading">
         <h4>About me</h4>
       </div>

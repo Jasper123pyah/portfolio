@@ -1,27 +1,23 @@
 import {useState} from 'react';
 import './projects.scss';
 import ProjectCard from '../../components/project-card/ProjectCard.tsx';
-import projects, {Project} from '../../projects.ts';
-import Modal from '../../components/modal/Modal.tsx';
+import projects, {ProjectType} from '../../projects.ts';
+import Project from '../../components/project/Project.tsx';
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-
-  const closeModal = () => {
-    setSelectedProject(null);
-  };
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
 
   return (
-    <div className="projects">
+    <div id={'projects'} className="projects">
       <h4>Projects</h4>
       <h3 className="projects-title">Recent Works</h3>
       <div className="projects-grid">
-        {projects.map((project: Project) => (
+        {projects.map((project: ProjectType) => (
           <ProjectCard key={project.name} setProject={() => setSelectedProject(project)} project={project}/>
         ))}
       </div>
       {selectedProject && (
-        <Modal project={selectedProject} onClose={closeModal}/>
+        <Project project={selectedProject}/>
       )}
     </div>
   );

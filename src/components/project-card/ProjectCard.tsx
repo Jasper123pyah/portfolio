@@ -1,20 +1,23 @@
 import React from 'react';
 import './project-card.scss';
-import { Project } from '../../projects.ts';
+import {ProjectType} from '../../projects.ts';
+import {useNavigate} from 'react-router-dom';
 
 type ProjectCardProps = {
-  project: Project;
-  setProject: (project: Project) => void;
+  project: ProjectType;
 };
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, setProject }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
-    setProject(project);
-  };
+    navigate(`/project/${project.slug}`);
+  }
+
 
   return (
     <div onClick={handleClick} className="project-card">
-      <img className="project-card__image" src={`src/assets/images/${project.images[0]}`} alt={project.name} />
+      <img className="project-card__image" src={`${project.images[0]}`} alt={project.name}/>
       <div className="project-card__details">
         <div className="project-card__details-container">
           <h4>{project.name}</h4>
