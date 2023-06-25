@@ -14,10 +14,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
     navigate(`/project/${project.slug}`);
   }
 
-
   return (
     <div onClick={handleClick} className="project-card">
-      <img className="project-card__image" src={`${project.images[0]}`} alt={project.name}/>
+      <img className="project-card__image" src={`${project.thumbnail}`} alt={project.name}/>
       <div className="project-card__details">
         <div className="project-card__details-container">
           <h4>{project.name}</h4>

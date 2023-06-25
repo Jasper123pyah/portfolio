@@ -8,7 +8,7 @@
         font-size: 48px;
         border-radius: 44px;
         padding: 12px 48px;
-        border: 1px solid $pink;
+        border: 2px solid $pink;
         color: $pink;
         display: flex;
         justify-content: center;
@@ -34,10 +34,7 @@
     }
 
     &__head {
-        h4 {
-            margin: 0;
-        }
-
+        margin: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -45,13 +42,26 @@
     }
 
     &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
         h3 {
             font-size: 32px;
             margin: 24px 0;
             line-height: 100%;
         }
     }
-
+    &__thumbnail {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        img {
+            object-fit: cover;
+            width: 460px;
+            height: 460px;
+            border-radius: 44px;
+        }
+    }
     &__image {
         border-radius: 44px;
         height: 400px;
@@ -63,5 +73,34 @@
         display: flex;
         gap: 48px;
     }
-
+    &__link {
+        color: $cyan;
+        margin: unset;
+        display: inline;
+        position: relative;
+        overflow: hidden;
+        text-decoration: unset;
+        text-transform: lowercase;
+        &:hover {
+            cursor: pointer;
+            &:after {
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 5;
+            right: 0;
+            width: 0;
+            bottom: -5px;
+            background: $cyan;
+            height: 2px;
+            transition-property: width;
+            transition-duration: .35s;
+            transition-timing-function: ease-out;
+        }
+    }
 }
