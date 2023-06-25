@@ -2,6 +2,7 @@ import {Fragment, useEffect} from 'react';
 import Front from "./front/Front";
 import About from "./about/About";
 import Projects from "./projects/Projects";
+import Resume from "./resume/Resume.tsx";
 
 type HomeProps = {
   shouldScrollToProjects: boolean;
@@ -24,5 +25,6 @@ export default function Home({shouldScrollToProjects, setShouldScrollToProjects}
     <Front/>
     <About/>
     <Projects/>
+    <Resume/>
   </Fragment>)
 }

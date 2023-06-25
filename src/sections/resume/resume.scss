@@ -1,0 +1,51 @@
+@import '../../assets/styles/variables.scss';
+
+.resume {
+    margin-bottom: 120px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        h4 {
+            margin: 0;
+            color: $purple;
+        }
+    }
+
+    &__section {
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        margin-top: 48px;
+        border-left: 2px $cyan solid;
+    }
+
+    &-card {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 80px;
+            height: 2px;
+            background-color: $cyan;
+            position: absolute;
+            left: 0;
+            top: 30%;
+        }
+
+        padding-left: 72px;
+
+        &__content {
+            h4 {
+                margin-top: 18px;
+                margin-bottom: 24px;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
