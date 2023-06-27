@@ -1,0 +1,60 @@
+@import '../../assets/styles/variables.scss';
+
+.contact {
+  padding-bottom: 120px;
+  &-cards {
+    width: 100%;
+    display: flex;
+    gap: 120px;
+    margin-top: 72px;
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 320px;
+
+    &__icon {
+        font-size: 64px;
+        color: $cyan;
+    }
+    &__name {
+      font-size: 18px;
+    }
+    &__info {
+      color: $cyan;
+      text-decoration: none;
+      font-size: 20px;
+      position: relative;
+      height: max-content;
+      width: max-content;
+      &--mail {
+        text-transform: lowercase;
+      }
+      &--linkedin {
+        text-transform: capitalize;
+      }
+      &:hover {
+        cursor: pointer;
+        &:after {
+          left: -2px;
+          right: auto;
+          width: 100%;
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        width: 0;
+        bottom: -17px;
+        background: $cyan;
+        height: 2px;
+        transition-property: width;
+        transition-duration: .35s;
+        transition-timing-function: ease-out;
+      }
+    }
+  }
+}

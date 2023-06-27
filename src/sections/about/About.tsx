@@ -3,28 +3,51 @@ import Card from "../../components/card/Card.tsx";
 import {FiMonitor} from "react-icons/fi";
 import {MdOutlineDesignServices} from "react-icons/md";
 import {FaCat} from "react-icons/fa";
+import { animate, stagger, inView } from "motion"
+import {useEffect} from "react";
 
 const About = () => {
 
+  useEffect(() => {
+    animate('#whoiam-part', {
+      y: +400
+    });
+
+    animate('#whatido-part', {
+      y: +400
+    });
+
+    inView('#whoiam', () => {
+      animate('#whoiam-part', {
+        y:0
+      },{
+        delay: stagger(0.3),
+        duration: 0.8,
+        easing: [.22, .03, .26, 1]
+      })
+    })
+
+    inView('#whatido', () => {
+      animate('#whatido-part', {
+        y:0
+      },{
+        delay: stagger(0.3),
+        duration: 0.8,
+        easing: [.22, .03, .26, 1]
+      })
+    })
+  }, [])
+
+
+
   return (
     <div id={'about'} className={'about'}>
-      <div className="about-heading">
-        <h4>About me</h4>
-      </div>
+      <h4>About me</h4>
       <h3>
         Who I am
       </h3>
-      <div className={'about-section'}>
-        <div className={'about-description'}>
-          <h4 className={'about-who__title'}>
-            Hobbies
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrudo.
-          </p>
-        </div>
-        <div className={'about-description'}>
+      <div id={'whoiam'} className={'about-section'}>
+        <div id={'whoiam-part'} className={'about-description'}>
           <h4 className={'about-who__title'}>
             Personality
           </h4>
@@ -33,9 +56,18 @@ const About = () => {
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrudo.
           </p>
         </div>
-        <div className={'about-description'}>
+        <div id={'whoiam-part'} className={'about-description'}>
           <h4 className={'about-who__title'}>
             Ambitions
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrudo.
+          </p>
+        </div>
+        <div id={'whoiam-part'} className={'about-description'}>
+          <h4 className={'about-who__title'}>
+            Hobbies
           </h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -46,8 +78,8 @@ const About = () => {
       <h3>
         What I do
       </h3>
-      <div className={'about-section'}>
-        <div className={'about-description'}>
+      <div id={'whatido'} className={'about-section'}>
+        <div id={'whatido-part'} className={'about-description'}>
           <Card>
             <div className={'about-card__icon'}>
               <FaCat/>
@@ -60,7 +92,7 @@ const About = () => {
             </p>
           </Card>
         </div>
-        <div className={'about-description'}>
+        <div id={'whatido-part'} className={'about-description'}>
           <Card>
             <div className={'about-card__icon'}>
               <MdOutlineDesignServices/>
@@ -73,7 +105,7 @@ const About = () => {
             </p>
           </Card>
         </div>
-        <div className={'about-description'}>
+        <div id={'whatido-part'} className={'about-description'}>
           <Card>
             <div className={'about-card__icon'}>
               <FiMonitor/>

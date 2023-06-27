@@ -9,6 +9,33 @@
     padding-bottom: 200px;
     border-bottom: 1px solid $purple;
 
+    &-link {
+        color: $cyan;
+        position: relative;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        &:hover {
+            cursor: pointer;
+            &:after {
+                left: -2px;
+                right: auto;
+                width: 100%;
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 5;
+            right: 0;
+            width: 0;
+            bottom: 0;
+            background: $cyan;
+            height: 2px;
+            transition-property: width;
+            transition-duration: .35s;
+            transition-timing-function: ease-out;
+        }
+    }
     &-text {
         width: 60%;
     }
@@ -46,7 +73,7 @@
         height: 300px;
         width: 300px;
         border-radius: 300px;
-        background: linear-gradient(60deg, $pink 0%, $purple 50%, $cyan 100%);
+        background: linear-gradient(270deg, $pink 0%, $purple 50%, $cyan 100%);
 
         &::after {
             content: '';
@@ -65,13 +92,13 @@
         margin: unset;
     }
 
-    .name {
+    &-name {
         font-family: 'Montserrat', sans-serif;
         margin: 24px 0;
         color: $pink;
     }
 
-    .description {
+    &-description {
         position: relative;
         margin: unset;
     }

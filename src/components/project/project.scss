@@ -81,10 +81,11 @@
         overflow: hidden;
         text-decoration: unset;
         text-transform: lowercase;
+
         &:hover {
             cursor: pointer;
             &:after {
-                left: 0;
+                left: -2px;
                 right: auto;
                 width: 100%;
             }

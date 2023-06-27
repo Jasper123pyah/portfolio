@@ -10,14 +10,15 @@ const Front = () => {
     <div className={'front'}>
       <div className={'front-text'}>
         <h3>Hello I'm</h3>
-        <h2 className={'name'}>Jasper van den Meiracker</h2>
+        <h2 className={'front-name'}>Jasper van den Meiracker</h2>
         <h3>Web Designer & Web Developer</h3>
-        <div className={'description'}>
+        <div className={'front-description'}>
           <div className={'empty-circle'}/>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            I am 23 years old and I am studying HBO ICT. I am
+            currently doing my seventh semester as a <a className={'front-link'} target={'_blank'} href={'https://deltafhict.nl/'}>delta</a> student. I have
+            finished one internship at <a className={'front-link'} target="_blank" href={'https://www.indicia.nl/'}>INDICIA</a> and am
+            currently working there as a part-time web developer.
           </p>
         </div>
         <h3 className={'findme'}>

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 400px;
+  width: calc(400px - 80px);
   padding: 48px 32px 48px 48px;
   border-radius: 48px;
   box-shadow: 8px 8px 4px $purple, inset 8px 8px 4px $cyan;

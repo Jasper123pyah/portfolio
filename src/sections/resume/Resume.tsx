@@ -4,7 +4,7 @@ import Card from "../../components/card/Card.tsx";
 const Resume = () => {
 
   return <div className={'resume'}>
-    <h4>
+    <h4 id={'resume'}>
       Resume
     </h4>
     <div className={'resume__container'}>

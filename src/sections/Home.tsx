@@ -3,6 +3,7 @@ import Front from "./front/Front";
 import About from "./about/About";
 import Projects from "./projects/Projects";
 import Resume from "./resume/Resume.tsx";
+import Contact from "./contact/Contact.tsx";
 
 type HomeProps = {
   shouldScrollToProjects: boolean;
@@ -26,5 +27,6 @@ export default function Home({shouldScrollToProjects, setShouldScrollToProjects}
     <About/>
     <Projects/>
     <Resume/>
+    <Contact/>
   </Fragment>)
 }

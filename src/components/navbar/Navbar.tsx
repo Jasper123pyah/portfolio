@@ -11,16 +11,16 @@ const Navbar = () => {
   }
   return (
     <div className={'navbar'}>
-      <a onClick={() => scrollTo('about')}>
+      <a className={'navbar-link'} onClick={() => scrollTo('about')}>
         about me
       </a>
-      <a onClick={() => scrollTo('projects')}>
+      <a className={'navbar-link'} onClick={() => scrollTo('projects')}>
         projects
       </a>
-      <a>
+      <a className={'navbar-link'} onClick={() => scrollTo('resume')}>
         resume
       </a>
-      <a>
+      <a className={'navbar-link'} onClick={() => scrollTo('contact')}>
         contact
       </a>
     </div>
