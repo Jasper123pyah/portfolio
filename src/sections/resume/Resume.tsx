@@ -1,20 +1,40 @@
 import './resume.scss'
 import Card from "../../components/card/Card.tsx";
+import {useEffect} from "react";
+import {animate, inView, stagger} from "motion";
 
 const Resume = () => {
+
+  useEffect(() => {
+    animate('#resume-card', {
+      x: +200,
+      opacity: 0
+    });
+
+    inView('#resume-card', () => {
+      animate('#resume-card', {
+        x: 0,
+        opacity: 1
+      }, {
+        delay: stagger(0.3),
+        duration: 0.5,
+        easing: [.22, .03, .26, 1]
+      })
+    })
+  }, [])
 
   return <div className={'resume'}>
     <h4 id={'resume'}>
       Resume
     </h4>
-    <div className={'resume__container'}>
+    <div id={'resume-section'} className={'resume__container'}>
       <div className={'resume__section'}>
         <h3>Job Experience</h3>
         <h4>
           2016 - 2023
         </h4>
         <div className={'resume__cards'}>
-          <div className={'resume-card'}>
+          <div id={'resume-card'} className={'resume-card'}>
             <Card>
               <div className={'resume-card__content'}>
                 <h3>
@@ -29,12 +49,12 @@ const Resume = () => {
               </div>
             </Card>
           </div>
-          <div className={'resume-card'}>
+          <div id={'resume-card'} className={'resume-card'}>
             <Card>
               yo
             </Card>
           </div>
-          <div className={'resume-card'}>
+          <div id={'resume-card'} className={'resume-card'}>
             <Card>
               yo
             </Card>
@@ -49,17 +69,17 @@ const Resume = () => {
           2016 - 2023
         </h4>
         <div className={'resume__cards'}>
-          <div className={'resume-card'}>
+          <div id={'resume-card'} className={'resume-card'}>
             <Card>
               yo
             </Card>
           </div>
-          <div className={'resume-card'}>
+          <div id={'resume-card'} className={'resume-card'}>
             <Card>
               yo
             </Card>
           </div>
-          <div className={'resume-card'}>
+          <div id={'resume-card'} className={'resume-card'}>
             <Card>
               yo
             </Card>

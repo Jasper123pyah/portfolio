@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
   }
 
   return (
-    <div onClick={handleClick} className="project-card">
+    <div id={'project-card'} onClick={handleClick} className="project-card">
       <img className="project-card__image" src={`${project.thumbnail}`} alt={project.name}/>
       <div className="project-card__details">
         <div className="project-card__details-container">
