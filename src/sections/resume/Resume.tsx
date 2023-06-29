@@ -11,7 +11,18 @@ const Resume = () => {
       opacity: 0
     });
 
-    inView('#resume-card', () => {
+    inView('#resume-job', () => {
+      animate('#resume-card', {
+        x: 0,
+        opacity: 1
+      }, {
+        delay: stagger(0.3),
+        duration: 0.5,
+        easing: [.22, .03, .26, 1]
+      })
+    })
+
+    inView('#resume-education', () => {
       animate('#resume-card', {
         x: 0,
         opacity: 1
@@ -27,8 +38,8 @@ const Resume = () => {
     <h4 id={'resume'}>
       Resume
     </h4>
-    <div id={'resume-section'} className={'resume__container'}>
-      <div className={'resume__section'}>
+    <div className={'resume__container'}>
+      <div id={'resume-job'} className={'resume__section'}>
         <h3>Job Experience</h3>
         <h4>
           2016 - 2023
@@ -61,7 +72,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-      <div className={'resume__section'}>
+      <div id={'resume-education'} className={'resume__section'}>
         <h3>
           Education
         </h3>

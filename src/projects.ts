@@ -19,6 +19,15 @@ export type ProjectType = {
 
 const projects: ProjectType[] = [
   {
+    name: 'Glow 2023',
+    role: 'Lead Frontend Developer & Scrum Master',
+    description: 'Glow is a yearly event in Eindhoven. For Glow 2023 our team created an AI powered application where we brought visitors together to create a collaborative art piece.',
+    images: [],
+    link: 'https://gloweindhoven.nl',
+    slug: 'glow',
+    thumbnail: glowImg
+  },
+  {
     name: 'Factuurvoldaan',
     role: 'Frontend developer',
     description: 'Factuurvoldaan is a client of INDICIA that requested a new website. At INDICIA I have worked on the new website for Factuurvoldaan. I was mostly involved in the frontend development, but I also added several backend features within WordPress.',
@@ -28,15 +37,6 @@ const projects: ProjectType[] = [
     thumbnail: voldaanImg1
   },
   {
-    name: 'ASAM',
-    role: 'Teamlead & cyber security analist',
-    description: 'ASAM is a tool for students on FHICT to find an internship with partners of the university. For this project I was the teamlead and cyber security analist.',
-    images: [],
-    link: 'https://asam.fhict.nl',
-    slug: 'asam',
-    thumbnail: asamImg
-  },
-  {
     name: 'Quantified Student',
     role: 'Frontend developer & researcher',
     description: 'Quantified student was a Delta project I worked on as frontend developer and researcher. For Quantified student I created a dashboard ',
@@ -44,6 +44,15 @@ const projects: ProjectType[] = [
     link: 'https://quantifiedstudent.nl',
     slug: 'quantified-student',
     thumbnail: qsThumbNail
+  },
+  {
+    name: 'ASAM',
+    role: 'Teamlead & cyber security analist',
+    description: 'ASAM is a tool for students on FHICT to find an internship with partners of the university. For this project I was the teamlead and cyber security analist.',
+    images: [],
+    link: 'https://asam.fhict.nl',
+    slug: 'asam',
+    thumbnail: asamImg
   },
   {
     name: 'INDICIA Component Library',
@@ -62,15 +71,6 @@ const projects: ProjectType[] = [
     link: 'https://kings-court.nl',
     slug: 'kings-court',
     thumbnail: kingscourtImg
-  },
-  {
-    name: 'Glow 2023',
-    role: 'Lead Frontend Developer & Scrum Master',
-    description: 'Glow is a yearly event in Eindhoven. For Glow 2023 our team created an AI powered application where we brought visitors together to create a collaborative art piece.',
-    images: [],
-    link: 'https://gloweindhoven.nl',
-    slug: 'glow',
-    thumbnail: glowImg
   }
 ];
 

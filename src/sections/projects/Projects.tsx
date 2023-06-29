@@ -28,6 +28,8 @@ const Projects = () => {
     <div id={'projects'} className="projects">
       <h4>Projects</h4>
       <h3 className="projects-title">Recent Works</h3>
+      <div className={'empty-circle'}/>
+      <div className={'square'}/>
       <div id={'projects-grid'} className="projects-grid">
         {projects.map((project: ProjectType) => (
           <ProjectCard key={project.name} project={project}/>
