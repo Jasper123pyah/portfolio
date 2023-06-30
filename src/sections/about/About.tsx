@@ -55,8 +55,9 @@ const About = () => {
             Personality
           </h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrudo.
+            As a social, creative and ambitious person, I love to learn new things and am always looking for new
+            fields within IT to explore. I am a team player with a very open personality who's always ready to help
+            others.
           </p>
         </div>
         <div id={'whoiam-part'} className={'about-description'}>
@@ -64,8 +65,9 @@ const About = () => {
             Ambitions
           </h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrudo.
+            I love to explore the sophisticated world of user experience and user interface design. AI has also taken up
+            my interest which is taking up a lot of my time. I strive to be a diversified developer with a focus on user
+            experience.
           </p>
         </div>
         <div id={'whoiam-part'} className={'about-description'}>
@@ -73,8 +75,8 @@ const About = () => {
             Hobbies
           </h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrudo.
+            My hobbies consist of playing video games, chess, exploring fun restaurants and I love to hang around with
+            my pets. I also like to work out and create web applications and designs in my spare time.
           </p>
         </div>
       </div>
