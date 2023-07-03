@@ -2,9 +2,9 @@ import './contact.scss';
 import Card from "../../components/card/Card.tsx";
 import {FiMail} from "react-icons/fi";
 import {FaLinkedin} from "react-icons/fa";
-import {AiFillPhone} from "react-icons/ai";
 import {useEffect} from "react";
 import {animate, inView, stagger} from "motion";
+import delta from "../../assets/images/delta-cyan.svg";
 
 const Contact = () => {
 
@@ -58,13 +58,13 @@ const Contact = () => {
         </Card>
         <Card id={'contact-card'}>
           <div className={'contact-card__icon'}>
-            <AiFillPhone/>
+            <img style={{height:'60px'}} src={delta} alt={'delta'} className={'delta'}/>
           </div>
           <p className={'contact-card__name'}>
-            PHONE
+            DELTA
           </p>
-          <a className={'contact-card__info'} href={'tel:+31640869531'}>
-            + 31 6 40869531
+          <a className={'contact-card__info'} href={'https://deltafhict.nl'}>
+            https://deltafhict.nl
           </a>
         </Card>
       </div>

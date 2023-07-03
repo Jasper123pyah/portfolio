@@ -10,6 +10,10 @@
     gap: 117px;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 80px;
+    }
   }
 
   &-who {
@@ -27,6 +31,7 @@
     }
 
     &__description {
+      text-align: center;
       font-size: 22px;
       height: 140px;
     }

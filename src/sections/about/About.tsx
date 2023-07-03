@@ -4,7 +4,7 @@ import {FiMonitor} from "react-icons/fi";
 import {MdOutlineDesignServices} from "react-icons/md";
 import {FaCat} from "react-icons/fa";
 import {animate, stagger, inView} from "motion"
-import {useEffect} from "react";
+import {ReactNode, useEffect} from "react";
 
 const About = () => {
 
@@ -42,6 +42,23 @@ const About = () => {
     })
   }, [])
 
+  const FilledCard = ({title, description, icon}: { title: string, description: string, icon: ReactNode }) => {
+    return (
+      <div id={'whatido-part'} className={'about-description'}>
+        <Card>
+          <div className={'about-card__icon'}>
+            {icon}
+          </div>
+          <h4 className={'about-card__head'}>
+            {title}
+          </h4>
+          <p className={'about-card__description'}>
+            {description}
+          </p>
+        </Card>
+      </div>
+    )
+  }
 
   return (
     <div id={'about'} className={'about'}>
@@ -84,45 +101,21 @@ const About = () => {
         What I do
       </h3>
       <div id={'whatido'} className={'about-section'}>
-        <div id={'whatido-part'} className={'about-description'}>
-          <Card>
-            <div className={'about-card__icon'}>
-              <FaCat/>
-            </div>
-            <h4 className={'about-card__head'}>
-              Branding
-            </h4>
-            <p className={'about-card__description'}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-            </p>
-          </Card>
-        </div>
-        <div id={'whatido-part'} className={'about-description'}>
-          <Card>
-            <div className={'about-card__icon'}>
-              <MdOutlineDesignServices/>
-            </div>
-            <h4 className={'about-card__head'}>
-              Web Design
-            </h4>
-            <p className={'about-card__description'}>
-              Lorem ipsum dolor
-            </p>
-          </Card>
-        </div>
-        <div id={'whatido-part'} className={'about-description'}>
-          <Card>
-            <div className={'about-card__icon'}>
-              <FiMonitor/>
-            </div>
-            <h4 className={'about-card__head'}>
-              Web Development
-            </h4>
-            <p className={'about-card__description'}>
-              Responsive, fast, and dynamic web applications, inclusive, accessible, and SEO friendly.
-            </p>
-          </Card>
-        </div>
+        {FilledCard({
+          title: 'Branding',
+          icon: <FaCat/>,
+          description: 'The creation of a brand identity for your business, including logo, typography, and color palette.'
+        })}
+        {FilledCard({
+          title: 'Web Design',
+          icon: <MdOutlineDesignServices/>,
+          description: 'Designing the look of your website, including wireframes, mockups, and prototypes.'
+        })}
+        {FilledCard({
+          title: 'Web Development',
+          icon: <FiMonitor/>,
+          description: 'Responsive, fast, and dynamic web applications that are inclusive, accessible, and SEO friendly.'
+        })}
       </div>
     </div>
   )

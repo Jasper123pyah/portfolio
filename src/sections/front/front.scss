@@ -1,141 +1,153 @@
 @import '../../assets/styles/variables.scss';
 
 .front {
-    margin-top: 15vh;
-    margin-bottom: 72px;
-    display: flex;
-    gap: 80px;
-    width: 100%;
-    padding-bottom: 200px;
-    border-bottom: 1px solid $purple;
+  margin-top: 15vh;
+  margin-bottom: 72px;
+  display: flex;
+  gap: 80px;
+  width: 100%;
+  padding-bottom: 200px;
+  border-bottom: 1px solid $purple;
 
-    &-link {
-        color: $cyan;
-        position: relative;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-        &:hover {
-            cursor: pointer;
-            &:after {
-                left: -2px;
-                right: auto;
-                width: 100%;
-            }
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            z-index: 5;
-            right: 0;
-            width: 0;
-            bottom: 0;
-            background: $cyan;
-            height: 2px;
-            transition-property: width;
-            transition-duration: .35s;
-            transition-timing-function: ease-out;
-        }
-    }
-    &-text {
-        width: 60%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &-link {
+    color: $cyan;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+    &:hover {
+      cursor: pointer;
+
+      &:after {
+        left: -2px;
+        right: auto;
+        width: 100%;
+      }
     }
 
-    &-image {
-        position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      right: 0;
+      width: 0;
+      bottom: 0;
+      background: $cyan;
+      height: 2px;
+      transition-property: width;
+      transition-duration: .35s;
+      transition-timing-function: ease-out;
+    }
+  }
 
-        img {
-            border-radius: 300px;
-            aspect-ratio: 6/7;
-            width: 540px;
-            height: 100%;
-            object-fit: contain;
-        }
+  &-text {
+    width: 60%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &-image {
+    position: relative;
+
+    img {
+      border-radius: 300px;
+      aspect-ratio: 6/7;
+      width: 540px;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .circle {
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50.5%, -0.1%);
+    bottom: 0;
+    height: 525px;
+    width: 500px;
+    border-radius: 300px;
+    background: linear-gradient(240deg, $pink 0%, $purple 50%, $cyan 100%);
+  }
+
+  .empty-circle {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    transform: translate(-50%, -50%);
+    top: 33%;
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+    background: linear-gradient(270deg, $pink 0%, $purple 50%, $cyan 100%);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      height: 292px;
+      width: 292px;
+      border-radius: 300px;
+      background-color: $dark;
+    }
+  }
+
+  h3 {
+    margin: unset;
+  }
+
+  &-name {
+    font-family: 'Montserrat', sans-serif;
+    margin: 24px 0;
+    color: $pink;
+  }
+
+  &-description {
+    position: relative;
+    margin: unset;
+  }
+
+  .findme {
+    margin-top: 20px;
+
+    &-buttons {
+      display: flex;
+      gap: 20px;
     }
 
-    .circle {
-        z-index: -1;
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 48px;
+      width: 48px;
+      border-radius: 8px;
+      background-color: $cyan;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      font-size: 36px;
+      color: $dark;
+      position: relative;
+
+      &:hover {
+        background-color: $pink;
+      }
+
+      .delta {
         position: absolute;
-        left: 50%;
-        transform: translate(-50.5%, -0.1%);
-        bottom: 0;
-        height: 525px;
-        width: 500px;
-        border-radius: 300px;
-        background: linear-gradient(240deg, $pink 0%, $purple 50%, $cyan 100%);
+        left: -4px;
+        bottom: -7px;
+        height: 48px;
+        width: 48px
+      }
     }
-
-    .empty-circle {
-        z-index: -1;
-        position: absolute;
-        left: 0;
-        transform: translate(-50%, -50%);
-        top: 33%;
-        height: 300px;
-        width: 300px;
-        border-radius: 300px;
-        background: linear-gradient(270deg, $pink 0%, $purple 50%, $cyan 100%);
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            height: 292px;
-            width: 292px;
-            border-radius: 300px;
-            background-color: $dark;
-        }
-    }
-
-    h3 {
-        margin: unset;
-    }
-
-    &-name {
-        font-family: 'Montserrat', sans-serif;
-        margin: 24px 0;
-        color: $pink;
-    }
-
-    &-description {
-        position: relative;
-        margin: unset;
-    }
-
-    .findme {
-        margin-top: 20px;
-
-        &-buttons {
-            display: flex;
-            gap: 20px;
-        }
-
-        &-button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            height: 48px;
-            width: 48px;
-            border-radius: 8px;
-            background-color: $cyan;
-            cursor: pointer;
-            transition: all 0.3s ease-in;
-            font-size: 36px;
-            color: $dark;
-            position: relative;
-
-            &:hover {
-                background-color: $pink;
-            }
-            .delta {
-                position: absolute;
-                left: -4px;
-                bottom:-7px;
-                height: 48px;
-                width: 48px
-            }
-        }
-    }
+  }
 }
