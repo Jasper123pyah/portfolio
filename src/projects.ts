@@ -22,7 +22,7 @@ const projects: ProjectType[] = [
   {
     name: 'Glow 2023',
     role: 'Lead Frontend Developer & Scrum Master',
-    description: 'Glow is a yearly event in Eindhoven. For Glow 2023 our team created an AI powered application where we brought visitors together to create a collaborative art piece.',
+    description: 'Glow is a yearly event in Eindhoven. For Glow 2023 our team created an AI powered application where we brought visitors together to create a collaborative art piece. During this project I have spent a lot of time learning UI and UX and how to work with AI tools like Stable Diffusion.',
     images: [],
     link: 'https://gloweindhoven.nl',
     slug: 'glow',
@@ -40,7 +40,7 @@ const projects: ProjectType[] = [
   {
     name: 'Quantified Student',
     role: 'Frontend developer & researcher',
-    description: 'Quantified student was a Delta project I worked on as frontend developer and researcher. For Quantified student I created a dashboard ',
+    description: 'Quantified student was a Delta project I worked on as frontend developer and researcher. For Quantified student I created a dashboard design for students to see all their personal data. This prototype was created with Adobe XD.',
     images: [quantifiedStudentImg],
     link: 'https://quantifiedstudent.nl',
     slug: 'quantified-student',
@@ -58,7 +58,7 @@ const projects: ProjectType[] = [
   {
     name: 'INDICIA Component Library',
     role: 'Fullstack developer',
-    description: 'The INDICIA Component Library is a library of components that can be used in projects. I have worked on the component library as a fullstack developer. I have created several components and added them to the library. I have also created a website for the component library.',
+    description: 'The INDICIA Component Library is a React component library that can be used in PHP and React projects. I have worked on the component library as a fullstack developer. I have created several components and a bunch of scripts to have them work across all projects within the company alongside all required documentation.',
     images: [iclImg],
     link: 'https://indicia.nl',
     slug: 'icl',
@@ -67,9 +67,9 @@ const projects: ProjectType[] = [
   {
     name: 'Kings Court',
     role: 'Project Lead & Fullstack developer',
-    description: 'Kings Court is a project I worked on as a fullstack developer. For Kings Court I have created a website and a backend. The website is an application to play chess with other people and AI bots. The backend is made in .NET Core and the frontend is made in React.',
+    description: 'Kings Court is a school-project I worked on as a fullstack developer. For Kings Court I have created a website and a backend. The website is an application to play chess with other people and AI bots. The backend is made in .NET Core and the frontend is made in React.',
     images: [],
-    link: 'https://kings-court.nl',
+    link: '',
     slug: 'kings-court',
     thumbnail: kingscourtImg
   }
