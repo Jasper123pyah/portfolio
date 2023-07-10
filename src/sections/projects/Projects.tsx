@@ -5,24 +5,28 @@ import {useEffect} from "react";
 import {animate, inView, stagger} from "motion";
 
 const Projects = () => {
+  const isMobile = window.innerWidth < 1024;
+
 
   useEffect(() => {
-    animate('#project-card', {
-      opacity: 0,
-      transform: "rotate(45deg)"
-    });
-
-    inView('#projects-grid', () => {
+    if (!isMobile) {
       animate('#project-card', {
-        opacity: 1,
-        transform: "rotate(0deg)"
-      },{
-        delay: stagger(0.3),
-        duration: 0.5,
-        easing: [.22, .03, .26, 1]
+        opacity: 0,
+        transform: "rotate(45deg)"
+      });
+
+      inView('#projects-grid', () => {
+        animate('#project-card', {
+          opacity: 1,
+          transform: "rotate(0deg)"
+        }, {
+          delay: stagger(0.3),
+          duration: 0.5,
+          easing: [.22, .03, .26, 1]
+        })
       })
-    })
-  }, [])
+    }
+  }, [isMobile])
 
   return (
     <div id={'projects'} className="projects">

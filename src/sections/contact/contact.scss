@@ -2,12 +2,17 @@
 
 .contact {
   padding-bottom: 120px;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 80px;
+  }
+
   &-cards {
     width: 100%;
     display: flex;
     gap: 120px;
     margin-top: 72px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       flex-direction: column;
       gap: 80px;
     }
@@ -32,11 +37,21 @@
       position: relative;
       height: max-content;
       width: max-content;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
       &--mail {
         text-transform: lowercase;
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
       }
       &--linkedin {
         text-transform: capitalize;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
       }
       &:hover {
         cursor: pointer;

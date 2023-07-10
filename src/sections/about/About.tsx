@@ -71,7 +71,7 @@ const About = () => {
           <h4 className={'about-who__title'}>
             Personality
           </h4>
-          <p>
+          <p className={'about-who__text'}>
             As a social, creative and ambitious person, I love to learn new things and am always looking for new
             fields within IT to explore. I am a team player with a very open personality who's always ready to help
             others.
@@ -81,7 +81,7 @@ const About = () => {
           <h4 className={'about-who__title'}>
             Ambitions
           </h4>
-          <p>
+          <p className={'about-who__text'}>
             I love to explore the sophisticated world of user experience and user interface design. AI has also taken up
             my interest which is taking up a lot of my time. I strive to be a diversified developer with a focus on user
             experience.
@@ -91,7 +91,7 @@ const About = () => {
           <h4 className={'about-who__title'}>
             Hobbies
           </h4>
-          <p>
+          <p className={'about-who__text'}>
             My hobbies consist of playing video games, chess, exploring fun restaurants and I love to hang around with
             my pets. I also like to work out and create web applications and designs in my spare time.
           </p>

@@ -4,25 +4,29 @@ import {useEffect} from "react";
 import {animate, inView} from "motion";
 
 const Resume = () => {
+  const isMobile = window.innerWidth < 1024;
 
   useEffect(() => {
-    animate('#resume-card', {
-      y: +100,
-      x: +200,
-      opacity: 0
-    });
-
-    inView('#resume-job', () => {
+    if (!isMobile) {
       animate('#resume-card', {
-        x: 0,
-        y: 0,
-        opacity: 1
-      }, {
-        duration: 1.5,
-        easing: [.22, .03, .26, 1]
+        y: +100,
+        x: +200,
+        opacity: 0
+      });
+
+      inView('#resume-card', () => {
+        animate('#resume-card', {
+          x: 0,
+          y: 0,
+          opacity: 1
+        }, {
+          duration: 0.5,
+          easing: [.22, .03, .26, 1]
+        })
       })
-    })
-  }, [])
+    }
+  }, [isMobile])
+
 
   const FilledCard = ({job, company, year}: { job: string, company: string, year: string }) => {
     return <div id={'resume-card'} className={'resume-card'}>

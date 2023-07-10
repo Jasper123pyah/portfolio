@@ -36,6 +36,10 @@
     width: 300px;
     border-radius: 44px;
     background: linear-gradient(270deg, $pink 0%, $purple 50%, $cyan 100%);
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &-title {
@@ -47,7 +51,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 120px;
     margin-bottom: 120px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       grid-template-columns: 1fr;
       gap: 80px;
     }

@@ -21,10 +21,14 @@
     src: url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
+html {
+    width: 100%;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     color: $white;
     background-color: $dark;
+    width: calc(100% - 40px);
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
@@ -37,6 +41,11 @@ html, .root {
     font-size: 24px;
     line-height: 38px;
     letter-spacing: 5px;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
 
 h1, .h1 {
@@ -55,6 +64,11 @@ h2, .h2 {
     margin-top: 38px;
     margin-bottom: 38px;
     letter-spacing: 13px;
+
+    @media (max-width: 768px) {
+        font-size: 48px;
+        line-height: 56px;
+    }
 }
 
 h3, .h3 {
@@ -64,6 +78,11 @@ h3, .h3 {
     margin-top: 38px;
     margin-bottom: 0;
     letter-spacing: 8px;
+
+    @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 60px;
+    }
 }
 
 h4, .h4 {
@@ -75,6 +94,11 @@ h4, .h4 {
     margin-bottom: 0;
     letter-spacing: 5px;
     color: $cyan;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
 a {
     font-family: 'Abel', sans-serif;
@@ -83,6 +107,10 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     letter-spacing: 5px;
+    @media (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
 
 p, ul, ol, pre, table, blockquote {
