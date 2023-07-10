@@ -6,6 +6,7 @@ import quantifiedStudentImg from './assets/images/quantified-student.png';
 import iclImg from './assets/images/icl.png';
 import kingscourtImg from './assets/images/kingscourt.png';
 import glowImg from './assets/images/glow.jpg';
+import indiciaImg from './assets/images/indicia.jpg';
 
 export type ProjectType = {
   name: string;
@@ -58,10 +59,10 @@ const projects: ProjectType[] = [
     name: 'INDICIA Component Library',
     role: 'Fullstack developer',
     description: 'The INDICIA Component Library is a library of components that can be used in projects. I have worked on the component library as a fullstack developer. I have created several components and added them to the library. I have also created a website for the component library.',
-    images: [],
+    images: [iclImg],
     link: 'https://indicia.nl',
     slug: 'icl',
-    thumbnail: iclImg
+    thumbnail: indiciaImg
   },
   {
     name: 'Kings Court',
