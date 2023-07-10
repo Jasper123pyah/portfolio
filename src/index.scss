@@ -102,10 +102,6 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     letter-spacing: 5px;
-    @media (max-width: 1024px) {
-        font-size: 18px;
-        line-height: 26px;
-    }
 }
 
 p, ul, ol, pre, table, blockquote {
