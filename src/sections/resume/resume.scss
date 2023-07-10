@@ -29,7 +29,11 @@
 
     &-card {
         position: relative;
-        padding-left: 32px;
+        padding-left: 72px;
+
+        @media (max-width: 1024px) {
+            padding-left: 32px;
+        }
 
         &::after {
             content: '';
