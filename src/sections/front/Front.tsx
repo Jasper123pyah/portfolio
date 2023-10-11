@@ -18,7 +18,7 @@ const Front = () => {
             I am 23 years old and I am studying HBO ICT. I am
             currently doing my seventh semester as a <a className={'front-link'} target={'_blank'} href={'https://deltafhict.nl/'}>delta</a> student. I have
             finished one internship at <a className={'front-link'} target="_blank" href={'https://www.indicia.nl/'}>INDICIA</a> and am
-            currently working there as a part-time web developer.
+            currently working as a freelance web developer at <a className={'front-link'} target="_blank" href={'https://www.webyx.nl/'}>Webyx</a>.
           </p>
         </div>
         <h3 className={'findme'}>
