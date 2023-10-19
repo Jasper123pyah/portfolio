@@ -58,9 +58,17 @@ const Resume = () => {
         <div className={'resume__cards'}>
           {
             FilledCard({
+                job: 'Freelance Web Developer',
+                company: 'Webyx',
+                year: '2023 - now'
+              }
+            )
+          }    
+          {
+            FilledCard({
                 job: 'Software Engineer',
                 company: 'INDICIA',
-                year: '2022 - now'
+                year: '2022 - 2023'
               }
             )
           }
