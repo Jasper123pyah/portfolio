@@ -1,12 +1,28 @@
+
+// Glow
+import glowThumbnail from './assets/images/glow-thumbnail.jpg';
+import glowImg1 from './assets/images/glow1.jpg';
+import glowImg2 from './assets/images/glow2.jpg';
+
+//ICL
+import indiciaImg from './assets/images/indicia.jpg';
+import iclImg from './assets/images/icl.png';
+
+// Parkonaut
+import parkonautThumbnail from './assets/images/parkonaut-thumbnail.jpg';
+import parkonautImg1 from './assets/images/parkonaut1.jpg';
+import parkonautImg2 from './assets/images/parkonaut2.jpg';
+
+// Voldaan
 import voldaanImg1 from './assets/images/voldaan.png';
 import voldaanImg2 from './assets/images/voldaanss.png';
-import asamImg from './assets/images/asam.png';
+
+// Quantified Student
 import qsThumbNail from './assets/images/qstn.png';
 import quantifiedStudentImg from './assets/images/quantified-student.png';
-import iclImg from './assets/images/icl.png';
-import kingscourtImg from './assets/images/kingscourt.png';
-import glowImg from './assets/images/glow.jpg';
-import indiciaImg from './assets/images/indicia.jpg';
+
+// ASAM
+import asamImg from './assets/images/asam.png';
 
 export type ProjectType = {
   name: string;
@@ -23,10 +39,28 @@ const projects: ProjectType[] = [
     name: 'Glow 2023',
     role: 'Lead Frontend Developer & Scrum Master',
     description: 'Glow is a yearly event in Eindhoven. For Glow 2023 our team created an AI powered application where we brought visitors together to create a collaborative art piece. During this project I have spent a lot of time learning UI and UX and how to work with AI tools like Stable Diffusion.',
-    images: [],
-    link: 'https://gloweindhoven.nl',
+    images: [glowImg1, glowImg2],
+    link: 'https://gloweindhoven.nl/project/futures-of-glow-fontys-ict/',
     slug: 'glow',
-    thumbnail: glowImg
+    thumbnail: glowThumbnail
+  },
+  {
+    name: 'INDICIA Component Library',
+    role: 'Fullstack developer',
+    description: 'The INDICIA Component Library is a React component library that can be used in PHP and React projects. I have worked on the component library as a fullstack developer. I have created several components and a bunch of scripts to have them work across all projects within the company alongside all required documentation.',
+    images: [iclImg],
+    link: 'https://indicia.nl',
+    slug: 'icl',
+    thumbnail: indiciaImg
+  },
+  {
+    name: 'Parkonaut',
+    role: 'Mobile Designer & Fullstack developer',
+    description: 'Parkonaut is a mobile application that allows users to rent and hire parking spots in the city. For this project I have worked on the design of the application and the development of the backend and frontend.',
+    images: [parkonautImg1, parkonautImg2],
+    link: '',
+    slug: 'parkonaut',
+    thumbnail: parkonautThumbnail
   },
   {
     name: 'Factuurvoldaan',
@@ -39,7 +73,7 @@ const projects: ProjectType[] = [
   },
   {
     name: 'Quantified Student',
-    role: 'Frontend developer & researcher',
+    role: 'UI Designer & researcher',
     description: 'Quantified student was a Delta project I worked on as frontend developer and researcher. For Quantified student I created a dashboard design for students to see all their personal data. This prototype was created with Adobe XD.',
     images: [quantifiedStudentImg],
     link: 'https://quantifiedstudent.nl',
@@ -55,24 +89,6 @@ const projects: ProjectType[] = [
     slug: 'asam',
     thumbnail: asamImg
   },
-  {
-    name: 'INDICIA Component Library',
-    role: 'Fullstack developer',
-    description: 'The INDICIA Component Library is a React component library that can be used in PHP and React projects. I have worked on the component library as a fullstack developer. I have created several components and a bunch of scripts to have them work across all projects within the company alongside all required documentation.',
-    images: [iclImg],
-    link: 'https://indicia.nl',
-    slug: 'icl',
-    thumbnail: indiciaImg
-  },
-  {
-    name: 'Kings Court',
-    role: 'Project Lead & Fullstack developer',
-    description: 'Kings Court is a school-project I worked on as a fullstack developer. For Kings Court I have created a website and a backend. The website is an application to play chess with other people and AI bots. The backend is made in .NET Core and the frontend is made in React.',
-    images: [],
-    link: '',
-    slug: 'kings-court',
-    thumbnail: kingscourtImg
-  }
 ];
 
 export default projects;

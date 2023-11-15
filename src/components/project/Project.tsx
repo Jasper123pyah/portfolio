@@ -48,14 +48,13 @@ const Project = ({setShouldScrollToProjects}: ProjectProps) => {
             <div className={'project__thumbnail'}>
               <img src={project.thumbnail} alt={project.name}/>
             </div>
-
-            <div className={'project__images'}>
-              {
-                project.images.map((image: string) => (
-                  <img key={image} className="project__image" src={`${image}`} alt={project.name}/>
-                ))
-              }
-            </div>
+          </div>
+          <div className={'project__images'}>
+            {
+              project.images.map((image: string) => (
+                <img key={image} className="project__image" src={`${image}`} alt={project.name}/>
+              ))
+            }
           </div>
         </div>
       </div>

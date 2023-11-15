@@ -11,7 +11,7 @@ const Front = () => {
       <div className={'front-text'}>
         <h3>Hello I'm</h3>
         <h2 className={'front-name'}>Jasper van den Meiracker</h2>
-        <h3>Web Designer & Web Developer</h3>
+        <h3>Full-stack Developer</h3>
         <div className={'front-description'}>
           <div className={'empty-circle'}/>
           <p>
