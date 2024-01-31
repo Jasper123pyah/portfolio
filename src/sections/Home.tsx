@@ -4,6 +4,7 @@ import About from "./about/About";
 import Projects from "./projects/Projects";
 import Resume from "./resume/Resume.tsx";
 import Contact from "./contact/Contact.tsx";
+import Navbar from "../components/navbar/Navbar.tsx";
 
 type HomeProps = {
   shouldScrollToProjects: boolean;
@@ -23,6 +24,7 @@ export default function Home({shouldScrollToProjects, setShouldScrollToProjects}
   }, [shouldScrollToProjects]);
 
   return (<Fragment>
+    <Navbar/>
     <Front/>
     <About/>
     <Projects/>

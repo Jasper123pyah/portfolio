@@ -1,4 +1,3 @@
-import Navbar from "./components/navbar/Navbar.tsx";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -25,7 +24,6 @@ function App() {
   ]);
   return (
     <>
-      <Navbar/>
       <RouterProvider router={router}/>
     </>
   )
