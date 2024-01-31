@@ -13,16 +13,19 @@ import parkonautThumbnail from './assets/images/parkonaut-thumbnail.jpg';
 import parkonautImg1 from './assets/images/parkonaut1.jpg';
 import parkonautImg2 from './assets/images/parkonaut2.jpg';
 
-// Voldaan
-import voldaanImg1 from './assets/images/voldaan.png';
-import voldaanImg2 from './assets/images/voldaanss.png';
+// Esther Lases
+import esther1 from './assets/images/Esther.png';
+import esther2 from './assets/images/Esther2.png';
+import estherThumbnail from './assets/images/Esther-thumbnail.png';
 
 // Quantified Student
 import qsThumbNail from './assets/images/qstn.png';
 import quantifiedStudentImg from './assets/images/quantified-student.png';
 
-// ASAM
-import asamImg from './assets/images/asam.png';
+// TVFHD
+import tvfhdThumbnail from './assets/images/tvfhd-thumbnail.png';
+import tvfhdImg from './assets/images/tvfhd.png';
+import tvfhdImg2 from './assets/images/tvfhd2.jpg';
 
 export type ProjectType = {
   name: string;
@@ -63,13 +66,13 @@ const projects: ProjectType[] = [
     thumbnail: parkonautThumbnail
   },
   {
-    name: 'Factuurvoldaan',
-    role: 'Frontend developer',
-    description: 'Factuurvoldaan is a client of INDICIA that requested a new website. At INDICIA I have worked on the new website for Factuurvoldaan. I was mostly involved in the frontend development, but I also added several backend features within WordPress.',
-    images: [voldaanImg2],
-    link: 'https://factuurvoldaan.nl',
-    slug: 'factuurvoldaan',
-    thumbnail: voldaanImg1
+    name: 'Esther Lases',
+    role: 'Fullstack developer',
+    description: 'Esther is a life coach for people in their thirties. She came to me with the request to make her a new website. Esther was also my first client under my own company "Webyx"',
+    images: [esther1, esther2],
+    link: 'https://estherlases.com',
+    slug: 'estherlases',
+    thumbnail: estherThumbnail
   },
   {
     name: 'Quantified Student',
@@ -81,13 +84,13 @@ const projects: ProjectType[] = [
     thumbnail: qsThumbNail
   },
   {
-    name: 'ASAM',
-    role: 'Teamlead & cyber security analist',
-    description: 'ASAM is a tool for students on FHICT to find an internship with partners of the university. For this project I was the teamlead and cyber security analist.',
-    images: [],
-    link: 'https://asam.fhict.nl',
-    slug: 'asam',
-    thumbnail: asamImg
+    name: 'The View From Halfway Down',
+    role: 'UI Designer & Developer',
+    description: 'The View From Halfway Down is an interactive art project made to increase awareness of the rising mental health issues among men.The project has been displayed during the Innovation Insights at Fontys University. For this project I helped create the display and the design of the project.',
+    images: [tvfhdImg, tvfhdImg2],
+    link: '',
+    slug: 'tvfhd',
+    thumbnail: tvfhdThumbnail
   },
 ];
 

@@ -53,7 +53,7 @@ const Resume = () => {
       <div id={'resume-job'} className={'resume__section'}>
         <h3>Job Experience</h3>
         <h4>
-          2018 - 2023
+          2018 - now
         </h4>
         <div className={'resume__cards'}>
           {
@@ -111,7 +111,7 @@ const Resume = () => {
           Education
         </h3>
         <h4>
-          2016 - 2023
+          2016 - now
         </h4>
         <div className={'resume__cards'}>
           {
