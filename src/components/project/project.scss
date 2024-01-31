@@ -50,6 +50,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    align-items: center;
 
     h3 {
       font-size: 32px;
@@ -85,8 +86,8 @@
   &__image {
     border-radius: 44px;
     height: 400px;
-    width: auto;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
 
     @media (max-width: 1024px) {
       width: 100%;
