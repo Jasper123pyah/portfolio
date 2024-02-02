@@ -2,7 +2,7 @@ import './about.scss'
 import Card from "../../components/card/Card.tsx";
 import {FiMonitor} from "react-icons/fi";
 import {MdOutlineDesignServices} from "react-icons/md";
-import {FaCat} from "react-icons/fa";
+import {FaCogs} from "react-icons/fa";
 import {animate, stagger, inView} from "motion"
 import {ReactNode, useEffect} from "react";
 
@@ -102,9 +102,9 @@ const About = () => {
       </h3>
       <div id={'whatido'} className={'about-section'}>
         {FilledCard({
-          title: 'Branding',
-          icon: <FaCat/>,
-          description: 'The creation of a brand identity for your business, including logo, typography, and color palette.'
+          title: 'Engineering',
+          icon: <FaCogs/>,
+          description: 'Analysing, designing, and developing software solutions to support business processes.'
         })}
         {FilledCard({
           title: 'Web Design',
