@@ -68,7 +68,7 @@ const projects: ProjectType[] = [
   {
     name: 'Esther Lases',
     role: 'Fullstack developer',
-    description: 'Esther is a life coach for people in their thirties. She came to me with the request to make her a new website. Esther was also my first client under my own company "Webyx"',
+    description: 'Esther is a life coach for people in their thirties. She came to me with the request to make her a new website. Esther was also my first client under my own company "Webyx".',
     images: [esther1, esther2],
     link: 'https://estherlases.com',
     slug: 'estherlases',
