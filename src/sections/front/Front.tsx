@@ -16,7 +16,7 @@ const Front = () => {
           <div className={'empty-circle'}/>
           <p>
             I am 24 years old and I am studying HBO ICT. I am
-            currently doing my seventh semester as a <a className={'front-link'} target={'_blank'} href={'https://deltafhict.nl/'}>delta</a> student. I have
+            currently doing my eighth semester graduating at <a className={'front-link'} target={'_blank'} href={'https://capgemini.com/'}>Capgemini</a> as a <a className={'front-link'} target={'_blank'} href={'https://deltafhict.nl/'}>delta</a> student. I have
             finished one internship at <a className={'front-link'} target="_blank" href={'https://www.indicia.nl/'}>INDICIA</a> and am
             currently working as a freelance web developer at <a className={'front-link'} target="_blank" href={'https://www.webyx.nl/'}>Webyx</a>.
           </p>
