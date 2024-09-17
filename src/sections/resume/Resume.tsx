@@ -58,9 +58,17 @@ const Resume = () => {
         <div className={'resume__cards'}>
           {
             FilledCard({
-                job: 'Software Engineer Intern',
-                company: 'Capgemini',
+                job: 'Fullstack Engineer',
+                company: 'Elecho',
                 year: '2024 - now'
+              }
+            )
+          }
+          {
+            FilledCard({
+                job: 'Software Engineer Graduate Intern',
+                company: 'Capgemini',
+                year: '2024'
               }
             )
           }
@@ -88,30 +96,6 @@ const Resume = () => {
               }
             )
           }
-          {
-            FilledCard({
-                job: 'Warehouse employee',
-                company: 'Deloox',
-                year: '2020-2021'
-              }
-            )
-          }
-          {
-            FilledCard({
-                job: 'Frontdesk',
-                company: 'Hotel La Reine & Hotel The Match',
-                year: '2019-2020'
-              }
-            )
-          }
-          {
-            FilledCard({
-                job: 'Trainer',
-                company: 'PicNic',
-                year: '2018 - 2019'
-              }
-            )
-          }
         </div>
       </div>
       <div id={'resume-education'} className={'resume__section'}>
@@ -126,7 +110,7 @@ const Resume = () => {
             FilledCard({
                 job: 'Delta Excellence Student',
                 company: 'FHICT',
-                year: '2022 - now'
+                year: '2022 - 2024'
               }
             )
           }

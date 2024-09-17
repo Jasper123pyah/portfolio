@@ -4,7 +4,7 @@ import {FiMail} from "react-icons/fi";
 import {FaLinkedin} from "react-icons/fa";
 import {useEffect} from "react";
 import {animate, inView, stagger} from "motion";
-import delta from "../../assets/images/delta-cyan.svg";
+import elecho from "../../assets/images/elecho.svg";
 
 const Contact = () => {
 
@@ -58,13 +58,13 @@ const Contact = () => {
         </Card>
         <Card id={'contact-card'}>
           <div className={'contact-card__icon'}>
-            <img style={{height:'60px'}} src={delta} alt={'delta'} className={'delta'}/>
+            <img style={{height:'60px'}} src={elecho} alt={'elecho'} className={'elecho'}/>
           </div>
           <p className={'contact-card__name'}>
-            DELTA
+            ELECHO
           </p>
-          <a className={'contact-card__info'} href={'https://deltafhict.nl'}>
-            https://deltafhict.nl
+          <a className={'contact-card__info'} href={'https://elecho.io'}>
+            https://elecho.io
           </a>
         </Card>
       </div>
