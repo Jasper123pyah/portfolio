@@ -1,6 +1,6 @@
 import './front.scss';
-import profile from '../../assets/images/profile.png';
 import elecho from '../../assets/images/elecho-icon.svg';
+import profile from '../../assets/images/profile.webp';
 import {FiGithub} from "react-icons/fi";
 import {FaLinkedinIn} from "react-icons/fa";
 
@@ -15,10 +15,17 @@ const Front = () => {
         <div className={'front-description'}>
           <div className={'empty-circle'}/>
           <p>
-            I am 24 years old and I am studying HBO ICT. I am
-            currently doing my eighth semester graduating at <a className={'front-link'} target={'_blank'} href={'https://capgemini.com/'}>Capgemini</a> as a <a className={'front-link'} target={'_blank'} href={'https://deltafhict.nl/'}>delta</a> student. I have
-            finished one internship at <a className={'front-link'} target="_blank" href={'https://www.indicia.nl/'}>INDICIA</a> and am
-            currently working as a full stack developer at <a className={'front-link'} target="_blank" href={'https://www.elecho.io/'}>ElECHO</a>.
+            I am 24 years old and I have a bachelor in HBO ICT. My graduation internship was at <a
+            className={'front-link'}
+            target={'_blank'}
+            href={'https://capgemini.com/'}>Capgemini</a> and I followed the <a className={'front-link'}
+                                                                                target={'_blank'}
+                                                                                href={'https://deltafhict.nl/'}>delta</a> programme
+            at FHICT. I have also
+            finished one internship at <a className={'front-link'} target="_blank"
+                                          href={'https://www.indicia.nl/'}>INDICIA</a> and am
+            currently working as a software developer at <a className={'front-link'} target="_blank"
+                                                                 href={'https://www.elecho.io'}>Elecho</a>.
           </p>
         </div>
         <h3 className={'findme'}>
@@ -38,7 +45,7 @@ const Front = () => {
       </div>
       <div className={'front-image'}>
         <div className={'circle'}/>
-        <img className={'profile'} src={profile} alt={'profile'}/>
+        <img className={'profile'} loading={"lazy"} src={profile} alt={'profile'}/>
       </div>
     </div>
   )

@@ -8,10 +8,10 @@ import glowImg2 from './assets/images/glow2.jpg';
 import indiciaImg from './assets/images/indicia.jpg';
 import iclImg from './assets/images/icl.png';
 
-// Parkonaut
-import parkonautThumbnail from './assets/images/parkonaut-thumbnail.jpg';
-import parkonautImg1 from './assets/images/parkonaut1.jpg';
-import parkonautImg2 from './assets/images/parkonaut2.jpg';
+// SimplePark
+import simpleParkThumbnail from './assets/images/simple-park-logo.svg';
+import simpleParkImg1 from './assets/images/simple-park1.svg';
+import simpleParkImg2 from './assets/images/simple-park2.svg';
 
 // Esther Lases
 import esther1 from './assets/images/Esther.png';
@@ -57,13 +57,13 @@ const projects: ProjectType[] = [
     thumbnail: indiciaImg
   },
   {
-    name: 'Parkonaut',
+    name: 'SimplePark',
     role: 'Mobile Designer & Fullstack developer',
-    description: 'Parkonaut is a mobile application that allows users to rent and hire parking spots in the city. For this project I have worked on the design of the application and the development of the backend and frontend.',
-    images: [parkonautImg1, parkonautImg2],
-    link: '',
-    slug: 'parkonaut',
-    thumbnail: parkonautThumbnail
+    description: 'SimplePark is a mobile application that allows users to rent and hire parking spots in the city. For this project I have worked on the design of the application and the development of the backend and frontend.',
+    images: [simpleParkImg1, simpleParkImg2],
+    link: 'https://www.simplepark.nl/',
+    slug: 'simplepark',
+    thumbnail: simpleParkThumbnail
   },
   {
     name: 'Esther Lases',

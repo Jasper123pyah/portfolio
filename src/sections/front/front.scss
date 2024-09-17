@@ -132,6 +132,11 @@
     font-family: 'Montserrat', sans-serif;
     margin: 24px 0;
     color: $pink;
+
+    @media (max-width: 768px) {
+      font-size: 44px;
+      line-height: 52px;
+    }
   }
 
   &-description {

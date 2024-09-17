@@ -66,20 +66,20 @@ const Resume = () => {
           }
           {
             FilledCard({
+                job: 'Freelance Web Developer',
+                company: 'Webyx',
+                year: '2023 - now'
+              }
+            )
+          }
+          {
+            FilledCard({
                 job: 'Software Engineer Graduate Intern',
                 company: 'Capgemini',
                 year: '2024'
               }
             )
           }
-          {
-            FilledCard({
-                job: 'Freelance Web Developer',
-                company: 'Webyx',
-                year: '2023 - now'
-              }
-            )
-          }    
           {
             FilledCard({
                 job: 'Software Engineer',

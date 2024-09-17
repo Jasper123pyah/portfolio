@@ -33,7 +33,7 @@ const Project = ({setShouldScrollToProjects}: ProjectProps) => {
             <BsArrowLeft/>
           </a>
           <div className="project__body">
-            <div>
+            <div className={"project__body-container"}>
               <h4 className={'project__head'}>
                 {project.name}
               </h4>
@@ -45,7 +45,7 @@ const Project = ({setShouldScrollToProjects}: ProjectProps) => {
               </p>
               {project.link && <a href={project.link} target={'_blank'} className={'project__link'}>{project.link}</a>}
             </div>
-            <div className={'project__thumbnail'}>
+            <div className={`${project.thumbnail.endsWith('svg') ? 'project__thumbnail project__thumbnail--contain' : 'project__thumbnail' }`}>
               <img src={project.thumbnail} alt={project.name}/>
             </div>
           </div>
