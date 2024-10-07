@@ -23,9 +23,9 @@ import qsThumbNail from './assets/images/qstn.png';
 import quantifiedStudentImg from './assets/images/quantified-student.png';
 
 // TVFHD
-import tvfhdThumbnail from './assets/images/tvfhd-thumbnail.png';
-import tvfhdImg from './assets/images/tvfhd.png';
-import tvfhdImg2 from './assets/images/tvfhd2.jpg';
+import elechoThumbnail from './assets/images/elecho-thumbnail.svg';
+import elechoImg from './assets/images/elecho.png';
+import elechoImg2 from './assets/images/elecho2.png';
 
 export type ProjectType = {
   name: string;
@@ -38,6 +38,15 @@ export type ProjectType = {
 }
 
 const projects: ProjectType[] = [
+  {
+    name: 'Elecho Website',
+    role: 'Web developer',
+    description: 'For my company Elecho I have created the website in NextJS. The website is created with a custom design and is fully responsive. Furthermore it is optimized for SEO, i18n and has a blog.',
+    images: [elechoImg, elechoImg2],
+    link: 'https://elecho.io',
+    slug: 'elecho',
+    thumbnail: elechoThumbnail
+  },
   {
     name: 'Glow 2023',
     role: 'Lead Frontend Developer & Scrum Master',
@@ -82,15 +91,6 @@ const projects: ProjectType[] = [
     link: 'https://quantifiedstudent.nl',
     slug: 'quantified-student',
     thumbnail: qsThumbNail
-  },
-  {
-    name: 'The View From Halfway Down',
-    role: 'UI Designer & Developer',
-    description: 'The View From Halfway Down is an interactive art project made to increase awareness of the rising mental health issues among men.The project has been displayed during the Innovation Insights at Fontys University. For this project I helped create the display and the design of the project.',
-    images: [tvfhdImg, tvfhdImg2],
-    link: '',
-    slug: 'tvfhd',
-    thumbnail: tvfhdThumbnail
   },
 ];
 
