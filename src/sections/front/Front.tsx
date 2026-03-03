@@ -4,7 +4,20 @@ import profile from '../../assets/images/profile.webp';
 import {FiGithub} from "react-icons/fi";
 import {FaLinkedinIn} from "react-icons/fa";
 
+const getAge = (birthDate: Date): number => {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDifference = today.getMonth() - birthDate.getMonth();
+
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  return age;
+}
+
 const Front = () => {
+  const age = getAge(new Date(1999, 11, 7));
 
   return (
     <div className={'front'}>
@@ -15,17 +28,16 @@ const Front = () => {
         <div className={'front-description'}>
           <div className={'empty-circle'}/>
           <p>
-            I am 24 years old and I have a bachelor in HBO ICT. My graduation internship was at <a
+            I am {age} years old and I have a bachelor in HBO ICT. My graduation internship was at <a
             className={'front-link'}
             target={'_blank'}
             href={'https://capgemini.com/'}>Capgemini</a> and I followed the <a className={'front-link'}
                                                                                 target={'_blank'}
-                                                                                href={'https://deltafhict.nl/'}>delta</a> programme
-            at FHICT. I have also
-            finished one internship at <a className={'front-link'} target="_blank"
-                                          href={'https://www.indicia.nl/'}>INDICIA</a> and am
-            currently working as a software developer at <a className={'front-link'} target="_blank"
-                                                                 href={'https://www.elecho.io'}>Elecho</a>.
+                                                                                href={'https://deltafontysict.nl/'}>delta</a> programme
+            at FHICT. I co-run <a className={'front-link'} target="_blank"
+                                  href={'https://www.elecho.io'}>Elecho</a> focused on creating and expanding MVP&apos;s
+            and also currently work at <a className={'front-link'} target="_blank"
+                                          href={'https://www.proforto.nl/'}>Proforto</a> as an automations engineer.
           </p>
         </div>
         <h3 className={'findme'}>

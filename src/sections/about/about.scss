@@ -1,13 +1,15 @@
 @import '../../assets/styles/variables.scss';
 
 .about {
+  position: relative;
   padding-bottom: 80px;
 
   &-section {
+    position: relative;
     margin-top: 38px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 117px;
+    gap: 64px;
     flex-direction: column;
     justify-content: center;
 
@@ -19,6 +21,21 @@
     @media (min-width: 768px) and (max-width: 1024px) {
       grid-template-columns: 1fr;
       gap: 60px;
+    }
+  }
+
+  &-square {
+    z-index: -1;
+    position: absolute;
+    right: 22%;
+    top: 45%;
+    height: 300px;
+    width: 300px;
+    border-radius: 44px;
+    background: linear-gradient(270deg, $pink 0%, $purple 50%, $cyan 100%);
+
+    @media (max-width: 1024px) {
+      display: none;
     }
   }
 

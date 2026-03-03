@@ -13,11 +13,6 @@ import simpleParkThumbnail from './assets/images/simple-park-logo.svg';
 import simpleParkImg1 from './assets/images/simple-park1.svg';
 import simpleParkImg2 from './assets/images/simple-park2.svg';
 
-// Esther Lases
-import esther1 from './assets/images/Esther.png';
-import esther2 from './assets/images/Esther2.png';
-import estherThumbnail from './assets/images/Esther-thumbnail.png';
-
 // Quantified Student
 // import qsThumbNail from './assets/images/qstn.png';
 // import quantifiedStudentImg from './assets/images/quantified-student.png';
@@ -67,6 +62,33 @@ const projects: ProjectType[] = [
     thumbnail: perspexThumbnail
   },
   {
+    name: 'Taste of Home',
+    role: 'Web Developer',
+    description: 'A clean brand website experience designed to communicate concept, atmosphere and offer with clear navigation and strong visual hierarchy.',
+    images: [elechoImg, elechoImg2],
+    link: 'https://elecho.io/portfolio/case-taste-of-home',
+    slug: 'taste-of-home',
+    thumbnail: elechoThumbnail
+  },
+  {
+    name: 'Rayven Recordings',
+    role: 'Web Developer',
+    description: 'A site structure tailored for artist content, releases and discoverability while keeping editing and publishing workflows lightweight.',
+    images: [elechoImg, elechoImg2],
+    link: 'https://elecho.io/portfolio/case-rayven-recordings',
+    slug: 'rayven-recordings',
+    thumbnail: elechoThumbnail
+  },
+  {
+    name: 'Gabz Hair',
+    role: 'Web Developer',
+    description: 'A modern service website aimed at clear service communication, trust and appointment-ready user flows.',
+    images: [elechoImg, elechoImg2],
+    link: 'https://elecho.io/portfolio/case-gabz-hair',
+    slug: 'gabz-hair',
+    thumbnail: elechoThumbnail
+  },
+  {
     name: 'Meowi',
     role: 'Fullstack Developer',
     description: 'Meowi was my graduation project at Capgemini. Meowi is a testing platform that enables synchronous mobile testing. The backend is made in .NET and the frontend is made in Blazor.',
@@ -92,15 +114,6 @@ const projects: ProjectType[] = [
     link: 'https://www.simplepark.nl/',
     slug: 'simplepark',
     thumbnail: simpleParkThumbnail
-  },
-  {
-    name: 'Esther Lases',
-    role: 'Web Developer',
-    description: 'Esther is a life coach for people in their thirties. She came to me with the request to make her a new website. Esther was also my first client under my own company "Webyx".',
-    images: [esther1, esther2],
-    link: 'https://estherlases.com',
-    slug: 'estherlases',
-    thumbnail: estherThumbnail
   },
   // {
   //   name: 'INDICIA Component Library',

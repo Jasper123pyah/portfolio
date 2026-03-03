@@ -1,62 +1,182 @@
 @import '../../assets/styles/variables.scss';
 
 .resume {
-    margin-bottom: 120px;
+  margin-bottom: 120px;
 
-    &__container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+  &__title {
+    margin-bottom: 40px;
+  }
 
-        h4 {
-            margin: 0;
-            color: $purple;
-        }
-      @media (max-width: 1024px) {
-        grid-template-columns: 1fr;
+  &__timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    @media (max-width: 1024px) {
+      padding-right: 8px;
+    }
+  }
+}
+
+.resume-item {
+  --timeline-color: #{$cyan};
+  --timeline-color-soft: rgba(32, 164, 200, 0.2);
+  --timeline-line-left: 164px;
+  --timeline-line-width: 4px;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  column-gap: 28px;
+  align-items: start;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: var(--timeline-line-left);
+    top: -12px;
+    width: 4px;
+    height: calc(100% + 24px);
+    width: var(--timeline-line-width);
+    background: var(--timeline-color);
+    border-radius: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: calc(var(--timeline-line-left) + (var(--timeline-line-width) / 2) - 11px);
+    top: 28px;
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    border: 3px solid var(--timeline-color);
+    background-color: $dark;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+    z-index: 3;
+  }
+
+  &__period {
+    margin-top: 28px;
+    color: $white;
+    opacity: 0.72;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+  }
+
+  &__card {
+    margin-left: 40px;
+    width: calc(100% - 40px);
+    border-radius: 24px;
+    padding: 20px 24px;
+    background: rgba(15, 23, 36, 0.92);
+    border: 1px solid var(--timeline-color-soft);
+    box-shadow: inset 0 0 0 1px rgba(243, 243, 255, 0.02);
+    transform: scale(0.97);
+    transform-origin: left center;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+    h4 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.1;
+      color: $white;
+    }
+  }
+
+  &__organization {
+    margin: 10px 0 0 0;
+    color: var(--timeline-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  &__details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    transition: max-height 0.25s ease, opacity 0.2s ease, margin-top 0.2s ease;
+    color: rgba(243, 243, 255, 0.86);
+    line-height: 1.45;
+    letter-spacing: 0.4px;
+  }
+
+  &:hover,
+  &.is-active {
+    &::after {
+      transform: scale(1.16);
+      background-color: var(--timeline-color);
+    }
+
+    .resume-item__card {
+      transform: scale(1);
+      border-color: var(--timeline-color);
+      box-shadow: 0 18px 34px -24px var(--timeline-color), inset 0 0 0 1px rgba(243, 243, 255, 0.05);
+    }
+
+    .resume-item__details {
+      max-height: 260px;
+      opacity: 1;
+      margin-top: 14px;
+    }
+  }
+
+  &--work {
+    --timeline-color: #{$cyan};
+    --timeline-color-soft: rgba(32, 164, 200, 0.2);
+  }
+
+  &--freelance {
+    --timeline-color: #{$cyan};
+    --timeline-color-soft: rgba(32, 164, 200, 0.2);
+  }
+
+  &--education {
+    --timeline-color: #{$purple};
+    --timeline-color-soft: rgba(140, 96, 213, 0.2);
+  }
+
+  @media (max-width: 1024px) {
+    --timeline-line-left: 8px;
+    --timeline-line-width: 4px;
+
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+
+    &::before {
+      left: var(--timeline-line-left);
+      top: 54px;
+      height: calc(100% + 22px);
+    }
+
+    &::after {
+      left: calc(var(--timeline-line-left) + (var(--timeline-line-width) / 2) - 11px);
+      top: 54px;
+    }
+
+    &__period {
+      margin-top: 0;
+      margin-left: 56px;
+      font-size: 13px;
+    }
+
+    &__card {
+      margin-left: 40px;
+      width: calc(100% - 64px);
+      padding: 18px 18px 18px 20px;
+
+      h4 {
+        font-size: 20px;
       }
     }
 
-    &__section {
+    &:hover,
+    &.is-active {
+      .resume-item__details {
+        max-height: 360px;
+      }
     }
-
-    &__cards {
-        display: flex;
-        flex-direction: column;
-        gap: 72px;
-        margin-top: 48px;
-        border-left: 2px $cyan solid;
-    }
-
-    &-card {
-        position: relative;
-        padding-left: 72px;
-
-        @media (max-width: 1024px) {
-            padding-left: 32px;
-        }
-
-        &::after {
-            content: '';
-            width: 76px;
-            height: 2px;
-            background-color: $cyan;
-            position: absolute;
-            left: 0;
-            top: 30%;
-            @media (max-width: 1024px) {
-                width: 36px;
-            }
-        }
-
-
-        &__content {
-          width: 100%;
-            h4 {
-                margin-top: 18px;
-                margin-bottom: 24px;
-            }
-            display: flex;
-            flex-direction: column;
-        }
-    }
+  }
 }

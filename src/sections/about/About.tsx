@@ -72,9 +72,9 @@ const About = () => {
             Personality
           </h4>
           <p className={'about-who__text'}>
-            As a social, creative and ambitious person, I love to learn new things and am always looking for new
-            fields within IT to explore. I am a team player with a very open personality who's always ready to help
-            others.
+            I am a pragmatic and curious builder who likes to turn complex ideas into practical solutions.
+            I work best in fast-moving environments where I can combine technical depth with clear communication
+            and ownership.
           </p>
         </div>
         <div id={'whoiam-part'} className={'about-description'}>
@@ -82,9 +82,9 @@ const About = () => {
             Ambitions
           </h4>
           <p className={'about-who__text'}>
-            I love to explore the sophisticated world of user experience and user interface design. AI has also taken up
-            my interest which is taking up a lot of my time. I strive to be a diversified developer with a focus on user
-            experience.
+            My ambition with Elecho is to help founders turn ideas into validated MVPs and scalable products.
+            I focus on AI and automation to remove bottlenecks, speed up execution and build practical software
+            with real business impact.
           </p>
         </div>
         <div id={'whoiam-part'} className={'about-description'}>
@@ -92,10 +92,11 @@ const About = () => {
             Hobbies
           </h4>
           <p className={'about-who__text'}>
-            My hobbies consist of playing video games, chess, exploring fun restaurants and I love to hang around with
-            my pets. I also like to work out and create web applications and designs in my spare time.
+            Outside work I enjoy chess, fitness, gaming and exploring new places to eat.
+            In my spare time I also prototype AI ideas and build small tools to experiment with automation.
           </p>
         </div>
+        <div className={'about-square'}/>
       </div>
       <h3>
         What I do
@@ -107,9 +108,9 @@ const About = () => {
           description: 'Analysing, designing, and developing software solutions to support business processes.'
         })}
         {FilledCard({
-          title: 'Web Design',
+          title: 'AI & Automations',
           icon: <MdOutlineDesignServices/>,
-          description: 'Designing the look of your website, including wireframes, mockups, and prototypes.'
+          description: 'AI-driven automations that improve workflows across companies and reduce repetitive work.'
         })}
         {FilledCard({
           title: 'Web Development',
