@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {useRef, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import type {MutableRefObject, PointerEventHandler} from 'react';
 import {Canvas, GroupProps, MeshProps, ThreeEvent, useFrame} from '@react-three/fiber';
 import {Environment, Image} from '@react-three/drei';
@@ -32,6 +32,14 @@ export default function PortfolioCarousel() {
   const onPointerUp: PointerEventHandler<HTMLDivElement> = (event) => {
     isDragging.current = false;
   };
+
+  useEffect(() => {
+    const urls = projects.map((project) => project.images[0] || project.thumbnail);
+    urls.forEach((url) => {
+      const image = new window.Image();
+      image.src = url;
+    });
+  }, []);
 
   return (
     <div className={'portfolio-carousel'} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp} onPointerLeave={onPointerUp}>
