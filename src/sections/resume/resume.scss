@@ -46,7 +46,7 @@
   &::after {
     content: '';
     position: absolute;
-    left: calc(var(--timeline-line-left) + (var(--timeline-line-width) / 2) - 11px);
+    left: calc(var(--timeline-line-left) + (var(--timeline-line-width) / 2) - 12px);
     top: 28px;
     width: 18px;
     height: 18px;
@@ -152,7 +152,7 @@
     }
 
     &::after {
-      left: calc(var(--timeline-line-left) + (var(--timeline-line-width) / 2) - 11px);
+      left: calc(var(--timeline-line-left) + (var(--timeline-line-width) / 2) - 12px);
       top: 54px;
     }
 
