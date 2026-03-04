@@ -46,7 +46,7 @@ export default function PortfolioCarousel() {
         <div className={'portfolio-modal'} onClick={() => setSelectedProject(null)}>
           <div className={'portfolio-modal__card'} onClick={(event) => event.stopPropagation()}>
             <button className={'portfolio-modal__close'} onClick={() => setSelectedProject(null)}>×</button>
-            <img src={selectedProject.thumbnail} alt={selectedProject.name} className={'portfolio-modal__image'}/>
+            <img src={selectedProject.images[0] || selectedProject.thumbnail} alt={selectedProject.name} className={'portfolio-modal__image'}/>
             <h4>{selectedProject.name}</h4>
             <p className={'portfolio-modal__role'}>{selectedProject.role}</p>
             <p className={'portfolio-modal__description'}>{selectedProject.description}</p>
@@ -85,7 +85,7 @@ function Rig({dragState, ...props}: RigProps) {
     }
     ref.current.rotation.y = THREE.MathUtils.damp(ref.current.rotation.y, dragState.targetRotation.current, 8, delta);
     state.events.update();
-    easing.damp3(state.camera.position, [-state.pointer.x * 2, state.pointer.y + 1.5, 10], 0.3, delta);
+    easing.damp3(state.camera.position, [-state.pointer.x * 0.9, state.pointer.y * 0.5 + 1.35, 10], 0.3, delta);
     state.camera.lookAt(0, 0, 0);
   });
 
