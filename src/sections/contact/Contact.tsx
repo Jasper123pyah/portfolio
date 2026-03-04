@@ -58,7 +58,7 @@ const Contact = () => {
         </Card>
         <Card id={'contact-card'}>
           <div className={'contact-card__icon'}>
-            <img style={{height:'60px'}} src={elecho} alt={'elecho'} className={'elecho'}/>
+            <img style={{height:'60px'}} src={elecho} alt={'elecho'} width={60} height={60} className={'elecho'}/>
           </div>
           <p className={'contact-card__name'}>
             ELECHO

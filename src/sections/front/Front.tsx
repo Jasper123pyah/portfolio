@@ -44,20 +44,20 @@ const Front = () => {
           Find Me
         </h3>
         <div className={'findme-buttons'}>
-          <a target={'_blank'} href={'https://github.com/Jasper123pyah'} className={'findme-button'}>
+          <a aria-label={'GitHub profile'} target={'_blank'} rel={'noopener noreferrer'} href={'https://github.com/Jasper123pyah'} className={'findme-button'}>
             <FiGithub/>
           </a>
-          <a target={'_blank'} href={'https://linkedin.com/in/jaspervandenmeiracker'} className={'findme-button'}>
+          <a aria-label={'LinkedIn profile'} target={'_blank'} rel={'noopener noreferrer'} href={'https://linkedin.com/in/jaspervandenmeiracker'} className={'findme-button'}>
             <FaLinkedinIn/>
           </a>
-          <a target={'_blank'} href={'https://elecho.io'} className={'findme-button'}>
+          <a aria-label={'Elecho website'} target={'_blank'} rel={'noopener noreferrer'} href={'https://elecho.io'} className={'findme-button'}>
             <img src={elecho} alt={'elecho'} className={'elecho'}/>
           </a>
         </div>
       </div>
       <div className={'front-image'}>
         <div className={'circle'}/>
-        <img className={'profile'} loading={"lazy"} src={profile} alt={'profile'}/>
+        <img className={'profile'} src={profile} alt={'profile'} width={2866} height={5174} loading={'eager'} fetchPriority={'high'} decoding={'async'}/>
       </div>
     </div>
   )

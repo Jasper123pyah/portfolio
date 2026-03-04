@@ -69,6 +69,13 @@
       height: 500px;
       border-radius: 24px;
     }
+
+    &--loading {
+      background: radial-gradient(circle at 30% 40%, rgba(32, 164, 200, 0.12), transparent 45%),
+      radial-gradient(circle at 70% 60%, rgba(140, 96, 213, 0.14), transparent 45%),
+      rgba(6, 14, 30, 0.7);
+      cursor: default;
+    }
   }
 
   .portfolio-modal {
