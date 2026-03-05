@@ -59,8 +59,8 @@ export default function PortfolioCarousel() {
             <p className={'portfolio-modal__role'}>{selectedProject.role}</p>
             <p className={'portfolio-modal__description'}>{selectedProject.description}</p>
             {selectedProject.link && (
-              <a className={'portfolio-modal__link'} href={selectedProject.link} target={'_blank'}>
-                Bekijk project
+              <a className={'portfolio-modal__link'} href={selectedProject.link} target={'_blank'} rel={'noopener noreferrer'}>
+                View project
               </a>
             )}
           </div>
