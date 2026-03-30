@@ -59,7 +59,7 @@ const projects: ProjectType[] = [
     role: 'Web Developer',
     description: 'A clean brand website experience designed to communicate concept, atmosphere and offer with clear navigation and strong visual hierarchy.',
     images: [tasteOfHomeImg],
-    link: 'https://elecho.io/portfolio/case-taste-of-home',
+    link: 'https://taste-of-home.nl',
     slug: 'taste-of-home',
     thumbnail: tasteOfHomeImg
   },
@@ -68,7 +68,7 @@ const projects: ProjectType[] = [
     role: 'Web Developer',
     description: 'A site structure tailored for artist content, releases and discoverability while keeping editing and publishing workflows lightweight.',
     images: [rayvenRecordingsImg],
-    link: 'https://elecho.io/portfolio/case-rayven-recordings',
+    link: 'https://rayvenrecordings.nl',
     slug: 'rayven-recordings',
     thumbnail: rayvenRecordingsThumbnail
   },
@@ -77,7 +77,7 @@ const projects: ProjectType[] = [
     role: 'Web Developer',
     description: 'A modern service website aimed at clear service communication, trust and appointment-ready user flows.',
     images: [gabzHairImg],
-    link: 'https://elecho.io/portfolio/case-gabz-hair',
+    link: 'https://gabzhair.nl',
     slug: 'gabz-hair',
     thumbnail: gabzHairThumbnail
   },
