@@ -35,8 +35,8 @@ const Front = () => {
                                                                                 target={'_blank'}
                                                                                 href={'https://deltafontysict.nl/'}>delta</a> programme
             at FHICT. I co-run <a className={'front-link'} target="_blank"
-                                  href={'https://www.elecho.io'}>Elecho</a> focused on creating and expanding MVP&apos;s
-            and also currently work at <a className={'front-link'} target="_blank"
+                                  href={'https://www.elecho.io'}>Elecho</a>, where we build AI employees that automate repetitive
+            work for Dutch SMBs, and also currently work at <a className={'front-link'} target="_blank"
                                           href={'https://www.proforto.nl/'}>Proforto</a> as an automations engineer.
           </p>
         </div>

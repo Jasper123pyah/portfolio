@@ -82,9 +82,9 @@ const About = () => {
             Ambitions
           </h4>
           <p className={'about-who__text'}>
-            My ambition with Elecho is to help founders turn ideas into validated MVPs and scalable products.
-            I focus on AI and automation to remove bottlenecks, speed up execution and build practical software
-            with real business impact.
+            My ambition with Elecho is to help Dutch SMBs put AI to work by building reliable AI employees
+            that take over repetitive processes. I focus on AI and automation to remove bottlenecks and
+            deliver software with real business impact.
           </p>
         </div>
         <div id={'whoiam-part'} className={'about-description'}>
