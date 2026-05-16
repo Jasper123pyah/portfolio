@@ -28,11 +28,11 @@ const Resume = () => {
     },
     {
       id: 'elecho',
-      title: 'Fullstack Engineer',
+      title: 'Co-founder & Full-stack Developer',
       organization: 'Elecho',
       period: '2024 - now',
       type: 'work',
-      details: 'Building web products with a focus on maintainable architecture, UX quality and performance.'
+      details: 'Building AI employees that run 24/7 and automate repetitive processes for Dutch SMBs.'
     },
     {
       id: 'webyx',

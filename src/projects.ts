@@ -39,7 +39,7 @@ const projects: ProjectType[] = [
   {
     name: 'Elecho Website',
     role: 'Web Developer',
-    description: 'For my company Elecho I have created the website in NextJS. The website is created with a custom design and is fully responsive. Furthermore it is optimized for SEO, i18n and has a blog.',
+    description: 'For my company Elecho I built the website in NextJS with a custom, fully responsive design and optimized it for SEO.',
     images: [elechoImg],
     link: 'https://elecho.io',
     slug: 'elecho',
